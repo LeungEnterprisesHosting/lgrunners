@@ -1,5 +1,5 @@
-# LG Runners Official Website
-Our official site.
+# LG Runners Official Web site
+The official site of [LG Runners](http://www.lgrunners.ga)
 
 ## Development
 Gulp is our task runner and we use Bower for front-end package management.
