@@ -1,0 +1,198 @@
+@font-face
+  font-family "franklin-gothic-urw"
+  font-style normal
+  font-weight 300
+  src url('../fonts/franklin.woff2') format('woff2'),
+      url('../fonts/franklin.woff') format('woff'),
+      url('../fonts/franklin.ttf') format('truetype')
+
+/** Scaffolding */
+html, body
+  height 100%
+  font-family franklin-gothic-urw
+  
+.navbar-custom
+  background rgba(#222, 0.9)
+
+  @media (min-width: 768px)
+    background transparent
+    
+  font-family Raleway
+  font-weight 400
+  text-transform uppercase
+  
+  transition all 0.3s
+  
+  &.scrolled
+    background rgba(#222, 0.9)
+  
+  a
+    height 100px
+    padding 40px
+    
+    color #eee
+    
+    &:hover,
+    &:focus,
+    &:active
+      color white
+      
+  .navbar-brand
+    font-size 2.25rem
+  
+  .navbar-toggle
+    margin-top 33px
+    margin-right 33px
+
+    .icon-bar
+      background-color white
+    
+  .nav.navbar-nav
+    margin-top 0
+    
+    a
+      padding 40px
+      text-align center
+      font-size 1.75rem
+      
+      @media (min-width: 768px)
+        &::after
+          content ''
+          
+          display block
+          height 0.5px
+          width 100%
+          margin-top 7px
+          
+          transform scaleX(0)
+          background-color white
+          transition all 0.3s
+          
+          font-size 1.5rem
+          text-align left
+      
+      &:hover,
+      &:focus,
+      &:active
+        background-color transparent
+        
+        @media (min-width: 768px)
+          &::after
+           transform scaleX(1)
+           
+
+    li.active
+      background rgba(#111, 0.9)
+
+      @media (min-width: 768px)
+        background transparent
+
+        a::after
+          transform scaleX(1)
+          
+.jumbotron
+  padding-top 140px
+  
+  &.jumbotron-full
+    height 100%
+    margin-bottom 0
+    
+.container
+  padding-bottom 50px
+
+.jumbotron-landing
+  display table
+  height 100%
+  width 100%
+  margin-bottom 0
+  padding-top 0
+  
+  background linear-gradient(
+               rgba(#444,0.80),
+               rgba(darkgoldenrod,0.90)
+             ),
+             url('../img/runners.jpg')
+  background-size cover
+  
+  color white
+  
+  .container
+    display table-cell
+    text-align center
+    vertical-align middle
+    
+.ad
+  position fixed
+  bottom 5px
+  left 25px
+  
+  color darken(darkgoldenrod, 35%)
+  
+  a
+    color darken(darkgoldenrod, 35%)
+    
+/** Elements */
+h1,
+h2,
+h3,
+h4
+  font-family Raleway
+  font-weight 300
+
+p
+  font-size 2rem
+  
+.form-control:focus
+  outline none
+  box-shadow none
+  border 1px solid #333
+  
+.form-horizontal
+  
+  .form-group-lg .control-label
+    padding-top 10px
+    
+textarea
+  resize vertical
+
+.btn-custom
+  min-width 200px
+      
+  border 1px solid #eee
+  border-radius 999px
+  background transparent
+  padding 12px 25px
+  
+  color white
+  
+  &:hover,
+  &:focus,
+  &:active
+    color #444
+    background rgba(white, 0.9)
+    
+.btn-custom-dark
+  min-width 200px
+      
+  border 1px solid #333
+  border-radius 999px
+  background transparent
+  padding 12px 25px
+  
+  color #333
+  
+  &:hover,
+  &:focus,
+  &:active
+    color white
+    background rgba(#333, 0.9)
+    
+/** Utility classes */
+.background-runners
+  background linear-gradient(
+             rgba(#444,0.80),
+             rgba(darkgoldenrod,0.90)
+           ),
+           url('../img/runners.jpg') !important
+  background-size cover !important
+  color white

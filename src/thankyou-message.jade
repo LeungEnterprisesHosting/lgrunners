@@ -1,0 +1,23 @@
+extends _layout
+
+block vars
+  - title       = 'Thank You | LGRunners Running Club'
+  - description = 'Thanks for getting in touch!'
+  - page        = 'thankyou-message'
+
+block content
+  .jumbotron.background-runners.text-center
+    .container
+      h1.text-uppercase Thank You
+      p Thanks for getting in touch!  We'll get back to you as soon as possible.
+  .container.text-center
+    br
+    br
+    .btn-group.hidden-xs
+      a.btn.btn-custom-dark.btn-lg(href='/home') Back to Home
+      a.btn.btn-custom-dark.btn-lg(href='/contact') Send Another Message
+    .visible-xs
+      a.btn.btn-custom-dark.btn-lg(href='/home') Back to Home
+      br
+      br
+      a.btn.btn-custom-dark.btn-lg(href='/contact') Send Another Message

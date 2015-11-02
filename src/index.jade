@@ -1,0 +1,23 @@
+extends _layout
+
+block vars
+  - title       = 'LGRunners | Community Running Club in Lower Gwynedd, PA'
+  - description = 'LGRunners is a community running club that welcomes runners of all ages.  Join us at one of our meetings, which are every Sunday at 4:00pm in Oxford Park.'
+  - page        = 'home'
+
+block content
+  .jumbotron.jumbotron-landing
+    .container.animated.fadeIn
+      h1.text-uppercase LG Runners
+      p LG Runners is a community running club based in Lower Gwynedd, PA.
+      br
+      .btn-group.hidden-xs
+        a.btn.btn-custom.btn-lg(href='/about') Learn More
+        a.btn.btn-custom.btn-lg(href='/join') Sign Up
+      .visible-xs
+        a.btn.btn-custom.btn-lg(href='/about') Learn More
+        br
+        br
+        a.btn.btn-custom.btn-lg(href='/join') Sign Up
+  .ad
+    p Web Design by #[a(href='https://www.leungenterprises.com' target='_blank') Leung Enterprises]

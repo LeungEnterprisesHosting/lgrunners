@@ -1,0 +1,23 @@
+block vars
+
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(charset='utf-8')
+
+    title #{title}
+    meta(name='description' content=description)
+
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,600|Arimo')
+    link(rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='/vendor/animate.css/animate.min.css')
+    link(rel='stylesheet' href='/css/styles.css')
+  body
+    include partials/_header
+    block content
+
+    script(src='/vendor/jquery/dist/jquery.min.js')
+    script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/js/scripts.js')
+    block scripts

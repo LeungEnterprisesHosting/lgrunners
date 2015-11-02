@@ -1,0 +1,18 @@
+extends _layout
+
+block vars
+  - title       = 'About Us | LGRunners Running Club'
+  - description = 'LGRunners is a community running club founded in 2015.  We have meetings every Sunday at 4:00pm in Oxford Park.'
+  - page        = 'about'
+
+block content
+  .jumbotron.background-runners.text-center
+    .container.animated.fadeIn
+      h1.text-uppercase About Us
+      p Founded in 2015, we've been encouraging running ever since.
+  .container.animated.fadeIn
+    h2 Our Story
+    p.
+      LG Runners was founded in 2015 by high school students who wanted to spread the fun of running.  All members are welcome to join.  The club is based in Gwynedd Knoll and in addition to its weekly meetings also hosts 5K races and other events.
+    br
+    a.btn.btn-custom-dark.btn-lg(href='/join') Sign Up

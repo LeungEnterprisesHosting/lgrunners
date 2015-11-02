@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "franklin-gothic-urw";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/franklin.woff2") format('woff2'), url("../fonts/franklin.woff") format('woff'), url("../fonts/franklin.ttf") format('truetype');
+}
+/** Scaffolding */
+html,
+body {
+  height: 100%;
+  font-family: franklin-gothic-urw;
+}
+.navbar-custom {
+  background: rgba(34,34,34,0.9);
+  font-family: Raleway;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+  }
+}
+.navbar-custom.scrolled {
+  background: rgba(34,34,34,0.9);
+}
+.navbar-custom a {
+  height: 100px;
+  padding: 40px;
+  color: #eee;
+}
+.navbar-custom a:hover,
+.navbar-custom a:focus,
+.navbar-custom a:active {
+  color: #fff;
+}
+.navbar-custom .navbar-brand {
+  font-size: 2.25rem;
+}
+.navbar-custom .navbar-toggle {
+  margin-top: 33px;
+  margin-right: 33px;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-custom .nav.navbar-nav {
+  margin-top: 0;
+}
+.navbar-custom .nav.navbar-nav a {
+  padding: 40px;
+  text-align: center;
+  font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  .navbar-custom .nav.navbar-nav a::after {
+    content: '';
+    display: block;
+    height: 0.5px;
+    width: 100%;
+    margin-top: 7px;
+    transform: scaleX(0);
+    background-color: #fff;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+.navbar-custom .nav.navbar-nav a:hover,
+.navbar-custom .nav.navbar-nav a:focus,
+.navbar-custom .nav.navbar-nav a:active {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-custom .nav.navbar-nav a:hover::after,
+  .navbar-custom .nav.navbar-nav a:focus::after,
+  .navbar-custom .nav.navbar-nav a:active::after {
+    transform: scaleX(1);
+  }
+}
+.navbar-custom .nav.navbar-nav li.active {
+  background: rgba(17,17,17,0.9);
+}
+@media (min-width: 768px) {
+  .navbar-custom .nav.navbar-nav li.active {
+    background: transparent;
+  }
+  .navbar-custom .nav.navbar-nav li.active a::after {
+    transform: scaleX(1);
+  }
+}
+.jumbotron {
+  padding-top: 140px;
+}
+.jumbotron.jumbotron-full {
+  height: 100%;
+  margin-bottom: 0;
+}
+.container {
+  padding-bottom: 50px;
+}
+.jumbotron-landing {
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 0;
+  background: linear-gradient(rgba(68,68,68,0.8), rgba(184,134,11,0.9)), url("../img/runners.jpg");
+  background-size: cover;
+  color: #fff;
+}
+.jumbotron-landing .container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.ad {
+  position: fixed;
+  bottom: 5px;
+  left: 25px;
+  color: #785707;
+}
+.ad a {
+  color: #785707;
+}
+/** Elements */
+h1,
+h2,
+h3,
+h4 {
+  font-family: Raleway;
+  font-weight: 300;
+}
+p {
+  font-size: 2rem;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #333;
+}
+.form-horizontal .form-group-lg .control-label {
+  padding-top: 10px;
+}
+textarea {
+  resize: vertical;
+}
+.btn-custom {
+  min-width: 200px;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  background: transparent;
+  padding: 12px 25px;
+  color: #fff;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active {
+  color: #444;
+  background: rgba(255,255,255,0.9);
+}
+.btn-custom-dark {
+  min-width: 200px;
+  border: 1px solid #333;
+  border-radius: 999px;
+  background: transparent;
+  padding: 12px 25px;
+  color: #333;
+}
+.btn-custom-dark:hover,
+.btn-custom-dark:focus,
+.btn-custom-dark:active {
+  color: #fff;
+  background: rgba(51,51,51,0.9);
+}
+/** Utility classes */
+.background-runners {
+  background: linear-gradient(rgba(68,68,68,0.8), rgba(184,134,11,0.9)), url("../img/runners.jpg") !important;
+  background-size: cover !important;
+  color: #fff;
+}
