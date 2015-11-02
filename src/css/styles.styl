@@ -46,6 +46,9 @@ html, body
 
     .icon-bar
       background-color white
+      
+  .navbar-collapse
+    max-height 100%
     
   .nav.navbar-nav
     margin-top 0
@@ -116,10 +119,20 @@ html, body
   
   color white
   
+  .mobile &
+    display block
+    padding-top 140px
+    padding-bottom 90px
+    height auto
+    min-height 100%
+  
   .container
     display table-cell
     text-align center
     vertical-align middle
+    
+    .mobile &
+      padding-bottom 0px
     
 .ad
   position fixed
@@ -127,6 +140,9 @@ html, body
   left 25px
   
   color darken(darkgoldenrod, 35%)
+  
+  .mobile &
+    display none
   
   a
     color darken(darkgoldenrod, 35%)
@@ -154,7 +170,8 @@ p
     
 textarea
   resize vertical
-
+  
+/** Custom element classes */
 .btn-custom
   min-width 200px
       
@@ -196,3 +213,15 @@ textarea
            url('../img/runners.jpg') !important
   background-size cover !important
   color white
+  
+.iframe-wrapper
+  position relative
+  padding-bottom 56.25% // 16:9 aspect ratio
+  height 0
+  
+  iframe
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
