@@ -1,5 +1,5 @@
 # LG Runners Official Web site
-The official site of [LG Runners](http://www.lgrunners.ga)
+The official site of [LG Runners](http://www.lgrunners.ga), a community running organization based in Lower Gwynedd, PA.
 
 ## Development
 Gulp is our task runner and we use Bower for front-end package management.
